@@ -1,0 +1,63 @@
+/* Resetting some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Styling the display section */
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    flex: 1;
+}
+
+/* Styling the buttons section */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Common styling for all buttons */
+.btn {
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #444;
+    background-color: #555;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    flex: 1 1 25%; /* Flexbox property for equal button width */
+}
+
+/* Different background for operator buttons */
+.operator {
+    background-color: #ff8c00;
+}
+
+/* Styling for the clear button */
+.clear {
+    background-color: #ff4c4c;
+    flex: 1 1 100%; /* Make it span the full width */
+}
+
+/* Styling for the equal button */
+.equal {
+    background-color: #4caf50;
+}
